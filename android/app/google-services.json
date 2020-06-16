@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "557758683763",
+    "firebase_url": "https://crypto-info-3a9a6.firebaseio.com",
+    "project_id": "crypto-info-3a9a6",
+    "storage_bucket": "crypto-info-3a9a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557758683763:android:832580e8f02794f0712806",
+        "android_client_info": {
+          "package_name": "com.ivan.cryptoinfo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "557758683763-92jc1kegj4c5q51kg6k0qd65v9010hgs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASW4AbsbzgQ-qw7kO0ChXMXmSP-3nHPDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "557758683763-92jc1kegj4c5q51kg6k0qd65v9010hgs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
