@@ -1,7 +1,10 @@
+import 'package:cryptoinfo/components/rounded_btn/rounded_btn.dart';
+import 'package:cryptoinfo/ui/cryptos/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:confetti/confetti.dart';
 import 'dart:math';
+import 'package:cryptoinfo/constants.dart' as Constants;
 
 class SuccessScreen extends StatefulWidget {
   @override
@@ -69,6 +72,39 @@ class _SuccessScreenState extends State<SuccessScreen> {
                   color: Colors.white,
                   fontWeight: FontWeight.w600,
                   fontSize: 23
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Center(
+              child: RoundedButton(
+                btnText: 'Listado',
+                color:Color(Constants.COLOR_PRIMARY_YELLOW),
+                onPressed: () async {
+
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Home_Page()));
+                },
+              ),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Center(
+              child: RoundedButton(
+                btnText: 'News',
+                color:Color(Constants.COLOR_PRIMARY_YELLOW),
+                onPressed: () async {
+
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Home_Page()));
+                },
               ),
             ),
           ),
