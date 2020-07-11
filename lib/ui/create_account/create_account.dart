@@ -39,18 +39,9 @@ class _CreateAccountState extends State<CreateAccount> {
                 padding: const EdgeInsets.fromLTRB(20, 20, 20, 8),
                 child: Text('Create Account',
                   style: TextStyle(
-                      color: Colors.white,
+                      color: Color(Constants.COLOR_PRIMARY_YELLOW),
                       fontWeight: FontWeight.w600,
                       fontSize: 25
-                  ),),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                child: Text('Please fill the input below.',
-                  style: TextStyle(
-                      color: Colors.grey[600],
-                      fontWeight: FontWeight.w400,
-                      fontSize: 14
                   ),),
               ),
               Container(
@@ -60,19 +51,19 @@ class _CreateAccountState extends State<CreateAccount> {
                   children: <Widget>[
                     Text(
                       'E-mail',
-                      style: TextStyle(fontWeight: FontWeight.w300, fontSize: 13, color: Colors.white),
+                      style: TextStyle(fontWeight: FontWeight.w300, fontSize: 13, color: Color(Constants.COLOR_PRIMARY_YELLOW)),
                     ),
                     SizedBox(
                       height: 10,
                     ),
                     TextField(
                       style: (TextStyle(
-                          color: Colors.white,
+                          color: Color(Constants.COLOR_PRIMARY_YELLOW),
                           fontWeight: FontWeight.w400
                       )),
                       keyboardType: TextInputType.emailAddress,
                       obscureText: false,
-                      cursorColor: Colors.white,
+                      cursorColor: Color(Constants.COLOR_PRIMARY_YELLOW),
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         fillColor: Color(0xfff3B324E),
@@ -97,18 +88,18 @@ class _CreateAccountState extends State<CreateAccount> {
                   children: <Widget>[
                     Text(
                       'Password',
-                      style: TextStyle(fontWeight: FontWeight.w300, fontSize: 13, color: Colors.white),
+                      style: TextStyle(fontWeight: FontWeight.w300, fontSize: 13, color: Color(Constants.COLOR_PRIMARY_YELLOW)),
                     ),
                     SizedBox(
                       height: 10,
                     ),
                     TextField(
                       style: (TextStyle(
-                          color: Colors.white,
+                          color: Color(Constants.COLOR_PRIMARY_YELLOW),
                           fontWeight: FontWeight.w400
                       )),
                       obscureText: true,
-                      cursorColor: Colors.white,
+                      cursorColor: Color(Constants.COLOR_PRIMARY_YELLOW),
                       decoration: InputDecoration(
                         border: InputBorder.none,
                         fillColor: Color(0xfff3B324E),

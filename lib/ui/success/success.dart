@@ -1,5 +1,6 @@
 import 'package:cryptoinfo/components/rounded_btn/rounded_btn.dart';
-import 'package:cryptoinfo/ui/cryptos/home_page.dart';
+import 'package:cryptoinfo/ui/cryptos/first_screen.dart';
+import 'package:cryptoinfo/ui/news/news.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:confetti/confetti.dart';
@@ -34,7 +35,7 @@ class _SuccessScreenState extends State<SuccessScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff251F34),
+      backgroundColor: Color(Constants.COLOR_BACKGROUND_DARK),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -57,7 +58,7 @@ class _SuccessScreenState extends State<SuccessScreen> {
           ),
           Padding(
             padding: const EdgeInsets.all(12.0),
-            child: Text('Congratulations,',
+            child: Text('Welcome,',
               style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.w600,
@@ -67,7 +68,7 @@ class _SuccessScreenState extends State<SuccessScreen> {
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text('You have logged in.',
+            child: Text('What do you want to see?',
               style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.w600,
@@ -79,14 +80,14 @@ class _SuccessScreenState extends State<SuccessScreen> {
             padding: const EdgeInsets.all(8.0),
             child: Center(
               child: RoundedButton(
-                btnText: 'Listado',
+                btnText: 'Crypto List',
                 color:Color(Constants.COLOR_PRIMARY_YELLOW),
                 onPressed: () async {
 
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => Home_Page()));
+                              builder: (context) => FirstScreen()));
                 },
               ),
             ),
@@ -103,7 +104,7 @@ class _SuccessScreenState extends State<SuccessScreen> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => Home_Page()));
+                          builder: (context) => NewsScreen()));
                 },
               ),
             ),

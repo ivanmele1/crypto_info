@@ -6,7 +6,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:modal_progress_hud/modal_progress_hud.dart';
 import 'package:cryptoinfo/constants.dart' as Constants;
 
@@ -37,30 +36,20 @@ class _LoginState extends State<Login> {
               children: [
                 Center(
                   child: SizedBox(
-                    width: 175,
-                    height: 175,
-                    child: SvgPicture.asset('assets/images/coin_login.svg')
+                    width: 125,
+                    height: 125,
+                    child: Image.asset('assets/images/crypto.png')
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(20, 15, 20, 8),
                   child: Text('Login',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Color(Constants.COLOR_PRIMARY_YELLOW),
                     fontWeight: FontWeight.w600,
                     fontSize: 20
                   ),
                   ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                  child: Text('Please sign in to continue.',
-                      style: TextStyle(
-                      color: Colors.grey[600],
-                      fontWeight: FontWeight.w400,
-                      fontSize: 13
-                  ),
-        ),
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20.0),
@@ -71,18 +60,18 @@ class _LoginState extends State<Login> {
                       children: <Widget>[
                         Text(
                           'E-mail',
-                          style: TextStyle(fontWeight: FontWeight.w300, fontSize: 13, color: Colors.white),
+                          style: TextStyle(fontWeight: FontWeight.w300, fontSize: 13, color: Color(Constants.COLOR_PRIMARY_YELLOW)),
                         ),
                         SizedBox(
                           height: 10,
                         ),
                         TextField(
                           style: (TextStyle(
-                           color: Colors.white,
+                           color: Color(Constants.COLOR_PRIMARY_YELLOW),
                            fontWeight: FontWeight.w400
                           )),
                           keyboardType: TextInputType.emailAddress,
-                            cursorColor: Colors.white,
+                            cursorColor: Color(Constants.COLOR_PRIMARY_YELLOW),
                             obscureText: false,
                             decoration: InputDecoration(
                                 border: InputBorder.none,
@@ -109,18 +98,18 @@ class _LoginState extends State<Login> {
                     children: <Widget>[
                       Text(
                         'Password',
-                        style: TextStyle(fontWeight: FontWeight.w300, fontSize: 13, color: Colors.white),
+                        style: TextStyle(fontWeight: FontWeight.w300, fontSize: 13, color: Color(Constants.COLOR_PRIMARY_YELLOW)),
                       ),
                       SizedBox(
                         height: 10,
                       ),
                       TextField(
                         style: (TextStyle(
-                            color: Colors.white,
+                            color: Color(Constants.COLOR_PRIMARY_YELLOW),
                             fontWeight: FontWeight.w400
                         )),
                         obscureText: true,
-                        cursorColor: Colors.white,
+                        cursorColor: Color(Constants.COLOR_PRIMARY_YELLOW),
                         decoration: InputDecoration(
                           border: InputBorder.none,
                           fillColor: Color(0xfff3B324E),
